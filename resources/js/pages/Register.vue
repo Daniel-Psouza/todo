@@ -1,3 +1,22 @@
+<script setup lang='ts'>
+import AppLayout from "@/layouts/AppLayout.vue"
+import { Head, useForm } from '@inertiajs/vue3'
+
+const form = useForm({
+    name: '',
+    email: ''
+});
+
+const save = () => {
+    form.post(route('register.store'), {
+        onSuccess(){
+            form.reset();
+            alert('Cadastrado com sucesso');
+        }
+    });
+}
+</script>
+
 <template>
 
     <Head title="Cadastro de Usuário" />
@@ -19,20 +38,3 @@
     </AppLayout>
 </template>
 
-<script setup lang='ts'>
-import AppLayout from "@/layouts/AppLayout.vue"
-import { Head, useForm } from '@inertiajs/vue3'
-
-const form = useForm({
-    name: '',
-    email: ''
-});
-
-const save = () => {
-    form.post(route('register.store'), {
-        onSuccess(){
-            alert('Cadastrado com sucesso');
-        }
-    });
-}
-</script>
