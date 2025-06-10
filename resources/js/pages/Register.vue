@@ -33,7 +33,7 @@ const save = () => {
                 <input class="border-2 rounded p-1" type="email" id="email" v-model="form.email">
                 <span class="text-red-500">{{ form.errors.email }}</span>
             </div>
-            <button type="submit" class="bg-blue-500 text-white w-fit p-2 rounded">Cadastrar</button>
+            <button type="submit" class="bg-blue-600 text-white w-fit p-2 rounded">Cadastrar</button>
         </form>
     </AppLayout>
 </template>

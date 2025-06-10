@@ -1,0 +1,3 @@
+Este projeto é uma aplicação web desenvolvida utilizando o framework Laravel, que é uma das principais ferramentas para desenvolvimento de aplicações PHP modernas. O sistema foi estruturado seguindo boas práticas de organização de código, utilizando o padrão MVC (Model-View-Controller), e conta com recursos como rotas, controllers, models, migrations para facilitar a manutenção e evolução do software.
+
+Durante o desenvolvimento, foram utilizadas tecnologias como PHP, Composer para gerenciamento de dependências, e o Inertia.js para integração entre o backend em Laravel e o frontend moderno, proporcionando uma experiência de usuário mais dinâmica.
